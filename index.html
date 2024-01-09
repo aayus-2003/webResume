@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Maven+Pro:wght@500&family=Roboto:wght@500;900&family=Signika+Negative:wght@300&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <title>resume</title>
+    <style>
+      body{
+        background-color: #e7e0e052;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .containerOfAll {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+      }
+      .left {
+        width: 50%;
+        background-color: white;
+      }
+      .height {
+        height: 100%;
+      }
+      .right {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .image {
+        width: 32.2%;
+        height: 49.5%;
+        background-color: white;
+        background-image: url(img/edited.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 15px;
+      }
+      header {
+        width: 100%;
+        height: 7vh;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+      }
+
+      .ul {
+        display: flex;
+      }
+
+      .ul,
+      .li {
+        list-style: none;
+        margin: 15px;
+        font-size: 18px;
+        color: #823c8f;
+        cursor: pointer;
+        transition: ease 0.2s;
+      }
+      .li:hover {
+        color: rgb(185, 72, 72);
+        scale: 0.9;
+      }
+      .first-text {
+        width: 100%;
+        height: 38.2%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .elem {
+        font-size: 2.5rem;
+        color: purple;
+      }
+
+      /* about and contact  */
+      .second-text {
+        width: 100%;
+        height: 52.7%;
+      }
+      /* end here */
+
+      span {
+        font-size: 20px;
+        font-weight: 500;
+      }
+      /* text container */
+      .text-one {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 8px;
+      }
+      .text-two {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      /* here end text container */
+
+      .first-div {
+        width: 47%;
+        height: 100%;
+        background-color: #ef9595;
+        border-radius: 22px;
+        color: black;
+      }
+      .second-div {
+        width: 47%;
+        height: 100%;
+        background-color: #8ecddd;
+        border-radius: 22px;
+        color: black;
+      }
+      .third-div {
+        width: 47%;
+        height: 100%;
+        background-color: #efb495;
+        border-radius: 22px;
+        color: black;
+      }
+      .forth-div {
+        width: 47%;
+        height: 100%;
+        background-color: #ebef95;
+        border-radius: 22px;
+        color: black;
+      }
+
+      .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .header {
+        width: 100%;
+        height: 28%;
+      }
+      .span {
+        font-family: "Lilita One", cursive;
+        font-family: "Maven Pro", sans-serif;
+        font-family: "Roboto", sans-serif;
+        font-family: "Signika Negative", sans-serif;
+        font-family: "Young Serif", serif;
+        font-weight: 700;
+        font-size: 18px;
+      }
+      li {
+        font-family: "Lilita One", cursive;
+        font-family: "Maven Pro", sans-serif;
+        font-family: "Roboto", sans-serif;
+        font-family: "Signika Negative", sans-serif;
+        list-style: none;
+      }
+      .font-li {
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+      }
+
+      /* contact */
+      /* .add_height{
+    height: 100%;
+} */
+
+      .contact_container {
+        width: 100%;
+        height: 54.7%;
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      .left-contact {
+        width: 40%;
+        height: 90%;
+        background-color: rgba(199, 187, 187, 0.721);
+        border-radius: 26px;
+      }
+
+      .profile {
+        width: 70%;
+        height: 80%;
+        /* background-color: #c7a337; */
+        text-align: center;
+      }
+
+      .right-contact {
+        width: 40%;
+        height: 90%;
+        border-radius: 26px;
+        background-color: rgba(199, 187, 187, 0.721);
+        /* text-align: center; */
+      }
+
+      .span_container {
+        width: 100%;
+        height: 6vh;
+        display: flex;
+        justify-content: center;
+      }
+
+      .padding {
+        padding-right: 5px;
+      }
+
+      .child-contact {
+        width: 100%;
+        height: 80%;
+        /* background-color: #ef9595; */
+      }
+
+      .center {
+        width: 100%;
+        height: 60%;
+        text-align: center;
+        /* background-color: #c7a337; */
+      }
+      .link {
+        width: 100%;
+        height: 35%;
+        /* background-color: antiquewhite; */
+      }
+      .media{
+        display: none;
+        height: 71%;
+        width: 100%;
+        /* background-color: red; */
+      }
+.icon{
+  display: none;
+}
+      .none {
+        display: none;
+      }
+
+      @media screen and (max-width: 800px) {
+        .containerOfAll {
+          display: block;
+        }
+        .left {
+          width: 100%;
+        }
+        .right {
+          /* width: 100%; */
+          display: none;
+        }
+        nav {
+          /* display: none; */
+          /* display: block; */
+          border-radius: 30px;
+    width: 100%;
+    background-color: rgb(195 254 227 / 58%);
+          
+          z-index: 1;
+        }
+        .ul {
+          display: block;
+          /* height: 20vh; */
+          /* background-color: red; */
+        }
+        .li:hover{
+          scale: 0.9;
+        }
+        /* .elem {
+          font-size: 2rem;
+          width: 97%;
+        } */
+        .header {
+          width: 100%;
+        }
+
+        .text-one {
+          display: block;
+          background-color: #e7e0e052;
+        }
+        .text-two {
+          display: block;
+          background-color: #e7e0e052;
+        }
+        .first-div {
+          width: 95%;
+          margin: 5px auto;
+
+          height: 50%;
+        }
+        .second-div {
+          width: 95%;
+          margin: 5px auto;
+
+          height: 50%;
+        }
+        .third-div {
+          width: 95%;
+          margin: 5px auto;
+
+          height: 50%;
+        }
+        .forth-div {
+          width: 95%;
+          margin: 5px auto;
+
+          height: 50%;
+        }
+        .second-text {
+          height: 100%;
+        }
+        .font-li {
+          font-size: 26px;
+          color: darkred;
+        }
+        .span {
+          color: darkslategrey;
+        }
+        .first-text{
+          display: inline-block;
+          background-color: #e7e0e052;
+
+        }
+        .elem {
+         margin: 15px auto 35px auto;
+         font-size: 2rem;
+          width: 97%;
+          text-align: center;
+        }
+        .image{
+          width: 47%;
+    height: 97%;
+    margin: 15px auto;
+  }
+  .media{
+    display: block;
+    z-index: 0;
+}
+.contact_container{
+  display: block;
+  /* background-color: #e7e0e052; */
+}
+.left-contact{
+  width: 90%;
+  height: 70%;
+  margin: auto;
+}
+.right-contact{
+  width: 90%;
+  margin: 10px auto;
+  height: 70%;
+}
+.icon{
+  display: block;
+}
+.none{
+  display: none;
+}
+.ul_none{
+  display: none;
+}
+.hover:hover{
+  background-color: rgba(185, 181, 181, 0.505);
+}
+
+
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="containerOfAll">
+      <div class="left height" id="height">
+        <header>
+          <i class="fa-solid fa-bars icon hover" id="icon_change" style="color: #8198c1; font-size: 36px; border: solid 1px; padding: 8px; border-radius: 14px; margin-left: 10px;"></i>
+          <nav>
+            <ul class="ul ul_none" id="ul_none">
+              <li class="li" id="about">about</li>
+              <li class="li" id="contact">contact</li>
+            </ul>
+          </nav>
+        </header>
+        <div class="first-text" id="colorChange">
+          <div class="media">
+            <div class="image">
+
+            </div>
+          </div>
+          <h1 class="elem">
+            AYUSH GOREGAONAKR <br />
+            <span style="font-size: 25px">Web Devloper</span>
+          </h1>
+        </div>
+
+        <!-- second -->
+
+        <div class="second-text text">
+          <div class="text-one">
+            <div class="first-div">
+              <div class="header flex">
+                <span class="span">COMPUTER LANGUAGE KNOW</span>
+              </div>
+              <ul>
+                <li class="font-li">HTML</li>
+                <li class="font-li">CSS</li>
+                <li class="font-li">BOOSTRAP</li>
+                <li class="font-li">JAVASCRIPT</li>
+              </ul>
+            </div>
+
+            <div class="second-div">
+              <div class="header flex">
+                <span class="span">LANGUAGE</span>
+              </div>
+              <ul>
+                <li class="font-li">ENGLISH</li>
+                <li class="font-li">MARATHI</li>
+                <li class="font-li">HINDI</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="text-two text">
+            <div class="third-div">
+              <div class="header flex">
+                <span class="span">EDUCATION</span>
+              </div>
+              <ul>
+                <li class="font-li">SSC PASS</li>
+                <li class="font-li">HSC PASS</li>
+                <li class="font-li">DTP (1 YEAR ITI)</li>
+                <li class="font-li">WEB DEVELOPER COURSE</li>
+              </ul>
+            </div>
+
+            <div class="forth-div">
+              <div class="header flex">
+                <span class="span">COMPUTER SKILLS</span>
+              </div>
+              <ul>
+                <li class="font-li">ADOBE PHOTOSHOP</li>
+                <li class="font-li">ADOBE ILLUSTRATOR</li>
+                <li class="font-li">CORAL DRAW</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- contact section  -->
+        <div id="none" class="contact_container none">
+          <div class="left-contact flex">
+            <div class="profile">
+              <span class="profile" style="font-size: 25px"
+                ><i
+                  class="fa-solid fa-bars"
+                  style="color: rgba(107, 21, 21, 0.91); font-size: 19px"
+                ></i>
+                PROFILE
+                <i
+                  class="fa-solid fa-bars"
+                  style="color: rgba(107, 21, 21, 0.91); font-size: 20px"
+                ></i
+              ></span>
+              <p class="profile_para" style="font-size: 20px; padding: 10px">
+                I consider my self a responsible and orderly person. I am
+                looking foward for my first work experience.
+              </p>
+              <br /><br />
+              <span style="font-size: 25px"
+                ><i
+                  class="fa-solid fa-bars"
+                  style="color: rgba(107, 21, 21, 0.91); font-size: 19px"
+                ></i>
+                EXPERIENCE
+                <i
+                  class="fa-solid fa-bars"
+                  style="color: rgba(107, 21, 21, 0.91); font-size: 20px"
+                ></i
+              ></span>
+              <p
+                style="font-size: 18px; padding-top: 10px; font-weight: normal"
+              >
+                FRESHER
+              </p>
+            </div>
+          </div>
+          <div class="right-contact flex">
+            <div class="child-contact">
+              <div class="span_container">
+                <span style="font-size: 23px"
+                  ><i
+                    class="fa-solid fa-bars"
+                    style="color: rgba(107, 21, 21, 0.91); font-size: 19px"
+                  ></i>
+                  CONTACT ME
+                  <i
+                    class="fa-solid fa-bars"
+                    style="color: rgba(107, 21, 21, 0.91); font-size: 19px"
+                  ></i
+                ></span>
+              </div>
+              <div class="center">
+                <p class="padding" style="padding-top: 10px; font-size: 19px">
+                  <i class="fa-solid fa-phone" style="padding: 5px"></i
+                  >8591227487
+                </p>
+                <p style="padding-top: 10px; font-size: 19px">
+                  <i class="fa-solid fa-envelope" style="padding: 5px"></i>
+                  ayushgoregaonkar28@gmail.com
+                </p>
+                <p style="padding-top: 10px; font-size: 19px">
+                  <i class="fa-solid fa-envelope"></i>
+                  ayushgoregaonkar26@gmail.com
+                </p>
+                <p class="padding" style="padding-top: 12px; font-size: 19px">
+                  <i class="fa-brands fa-github" style="margin-right: 7px"></i
+                  ><a href="https://github.com/aayus-2003">aayus-2003</a>
+                </p>
+              </div>
+
+              <div class="link" style="text-align: center">
+                <span style="font-size: 25px"
+                  ><i
+                    class="fa-solid fa-bars"
+                    style="color: rgba(107, 21, 21, 0.91); font-size: 19px"
+                  ></i>
+                  MY PROJECTS LINK
+                  <i
+                    class="fa-solid fa-bars"
+                    style="color: rgba(107, 21, 21, 0.91); font-size: 19px"
+                  ></i
+                ></span>
+                <p style="padding: 15px">
+                  <a href="https://aayus-2003.github.io/all_ProjectsLinks/"
+                    >All Projects</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- right box -->
+      <div class="right">
+        <div class="image"></div>
+      </div>
+    </div>
+
+    <!-- js script -->
+    <script>
+      //contact btn
+      let contact = document.getElementById("contact");
+      let about = document.getElementById("about");
+      let colorChange = document.getElementById("colorChange")
+      let text = document.querySelectorAll(".text");
+      let newContact = document.getElementById("none");
+      //   let height = document.getElementById("height")
+
+      console.log(newContact);
+      console.log(text);
+      text.forEach((value) => {
+        contact.addEventListener("click", (e) => {
+          value.classList.add("none");
+          //   height.classList.remove("height");//remove
+          //   height.classList.add("add_height")//add height
+          newContact.classList.remove("none");
+          colorChange.style.backgroundColor = "white"
+        });
+        about.addEventListener("click", () => {
+          value.classList.remove("none");
+          newContact.classList.add("none");
+          // colorChange.style.backgroundColor = "#e7e0e052"
+        });
+      });
+
+
+// burger logic
+
+let burger = document.getElementById("icon_change")
+
+burger.addEventListener('click',()=>{
+let ul_none = document.getElementById("ul_none")
+ul_none.classList.toggle("ul_none");
+// burger.style.display = "none";
+})
+
+    </script>
+  </body>
+</html>
